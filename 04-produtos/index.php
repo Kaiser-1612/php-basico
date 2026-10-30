@@ -14,6 +14,13 @@ $produtos = [
 }
     $quantidade = count($produtos);
 ?>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora de IMC</title>
+</head>
+<body>
 <table border="1">
     <thead>
         <tr>
@@ -34,7 +41,6 @@ $produtos = [
         <?php endforeach; ?>
     </tbody>
 </table>
-
-
-<!-- A frase com o total deve ficar aqui fora, depois que a tabela fechar -->
-<p><?= $quantidade ?> produtos cadastrados. Valor total em estoque: <?= formatarPreco($total)
+<p><?= $quantidade ?> produtos cadastrados. Valor total em estoque: <?= formatarPreco($total) ?>
+</body>
+</html>
